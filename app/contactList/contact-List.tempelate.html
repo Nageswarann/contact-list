@@ -1,0 +1,82 @@
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <!--Sidebar content-->
+      
+            Searchj: <input ng-model="$ctrl.query" />
+      
+          <!-- </div>
+          <div class="col-md-10">
+            Body content -->
+      
+            <ul class="contacts" align="left">
+              <ul ng-repeat="contact in $ctrl.contacts | filter:$ctrl.query">
+                  <table>
+                    <tr class="ex1">
+                      <td>
+                    <img alt="{{contact.name}}" ng-src={{contact.image}} height="50" width="50" ng-click="$ctrl.passValue(contact)" />
+                      </td>
+                      <td>
+                    {{contact.name}}<br>
+                    {{contact.designation}}<br>
+                    {{contact.city}}<br>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+            </ul>
+      
+          </div>
+          <div class="col-md-10">
+            <table>
+              <tr>
+                <td>
+                <img ng-src="{{clickImage}}" height="300" width="300" >
+                </td>
+                <td>
+                  <table padding="20px">
+                    <tr>
+                      <td>
+                        Name
+                      </td>
+                      <td>
+                       <input type="text" id="name" ng-model="$ctrl.selectedContact.name"> <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Phone
+                      </td>
+                      <td>
+                       <input type="text" id="phone" ng-model="$ctrl.selectedContact.phone"><br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Email
+                      </td>
+                      <td>
+                       <input type="text" id="Email" ng-model="$ctrl.selectedContact.Email"><br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        City
+                      </td>
+                      <td>
+                       <input type="text" id="city" ng-model="$ctrl.selectedContact.city"><br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                      Designation
+                      </td>
+                      <td> <input type="text" id="designation" ng-model="$ctrl.selectedContact.designation"><br>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+        </div>
+      </div>

@@ -1,0 +1,15 @@
+{
+  "name": "mynewproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8080 -c -1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nages",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.2"
+  }
+}
